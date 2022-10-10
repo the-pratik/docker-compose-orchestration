@@ -94,3 +94,18 @@ Note that sudo is needed to enable port 80 in this case on Mac. You can choose a
       skaffold dev
       ```
 
+## Docker Compose
+
+1. `docker-compose build`
+
+2. `docker-compose up` or `docker-compose up -d` (detached mode)
+
+3. `docker-compose down`
+
+4. `docker-compose ps`
+
+5. `docker-compose stop [service_name]`
+
+6. `docker-compose start [service_name]`
+
+7. `docker-compose up -d --no-deps [service_name]`
