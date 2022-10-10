@@ -109,3 +109,11 @@ Note that sudo is needed to enable port 80 in this case on Mac. You can choose a
 6. `docker-compose start [service_name]`
 
 7. `docker-compose up -d --no-deps [service_name]`
+
+## Additional features
+
+1. Logs `docker-compose logs [service...]`, logs with last n lines `docker-compose logs --tail=n`, follow logs live `docker-compose logs --follow`
+
+2. Shell into container `docker-compose exec <serviceName> sh`, `nano <fileName>` to see script
+
+3. Scale container `docker-compose up -d --scale <service>=4` into 4 replicas (Note: Remove container name and host port to scale)
